@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial of Thymeleaf</title>
+</head>
+<body>
+  <h1>Thymeleaf Page</h1>
+  <h2>入力画面</h2>
+  <p th:text="'入力された値は「' + ${val1} + '」です。'"></p>
+  <p><a th:href="@{/input/(previous=${val1})}">入力画面に戻る</a></p>
+</body>
+</html>
